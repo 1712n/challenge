@@ -30,6 +30,7 @@
 Let us know if you have any questions and looking forward to seeing your work! 
 
 ## Resources
+* [List of available tasks](https://gitlab.com/IncaOutsourcing/bounty/issues)
 * [Bounty Program Wiki](https://gitlab.com/IncaOutsourcing/bounty/wikis/home)
 * [Help with markdown](https://about.gitlab.com/handbook/product/technical-writing/markdown-guide/)
 * [Inca Digital Securities website](https://www.incas.ec)
