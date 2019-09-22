@@ -9,3 +9,12 @@ Unless you are working with natural language data, your fileds will most likely 
 ## Value format
 
 As different sources display the same information in different formats, it's important to specify the format in the name of the field. For example, when working with data from [ZCash stats from bitinfocharts](https://bitinfocharts.com/zcash/), you would create `market_capitalisation_USD` field and assign `707906541` value to it instead of `market_capitalisation = $707,906,541 USD`.
+
+## Blockchain address formats
+
+The address of the recipient and the sender shall conform to the following formats:
+
+- [Bitcoin](https://en.bitcoin.it/wiki/Address)
+- [Ethereum](https://en.wikipedia.org/wiki/Ethereum#Addresses)
+- [BitcoinCash](https://www.bitcoincash.org/spec/cashaddr.html)
+- [Zcash](https://zcash.readthedocs.io/en/latest/rtd_pages/addresses.html)
