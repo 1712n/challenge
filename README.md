@@ -1,7 +1,7 @@
 # Welcome to the Inca Bounty Program!
 
 * [List of available tasks](https://github.com/1712n/bounty/issues)
-* [Bounty Program Wiki](https://gitlab.com/IncaOutsourcing/bounty/wikis/home)
+* [Bounty Program Wiki](https://github.com/1712n/bounty/wiki/Bounty-Program-Wiki)
 * [Help with markdown](https://about.gitlab.com/handbook/product/technical-writing/markdown-guide/)
 * [Inca Digital Securities website](https://www.incas.ec)
 * [NTerminal website](https://www.nterminal.com)
