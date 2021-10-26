@@ -1,6 +1,6 @@
 # Welcome to the Inca Digital Challenge Program!
 
-* [Challenge Program Wiki](https://github.com/inca-digital/challenge/wiki/Inca-Digital-Challenge-Program-Wiki)
+* [Challenge Program Wiki](https://github.com/inca-digital/challenge/wiki)
 * [List of available tasks](https://github.com/inca-digital/challenge/issues)
 * [Inca Digital website](https://inca.digital)
 
