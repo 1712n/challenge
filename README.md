@@ -2,12 +2,11 @@
 
 ## Background
 
-[Inca Digital](https://inca.digital/) often uses "challenge tasks" as introductory projects to vet potential employees and interns. These projects give interested individuals a chance to prove themselves, learn a bit about our company & products, and produce useful results in the process. These projects are extremely independent and will require you to manage your own time and work process. Some tasks in our Challenge Program are paid, and we are constantly adding new ones. If you want more work in a specific area, email challenge@inca.digital, and we'll do our best to create more tasks.
+[Inca Digital](https://inca.digital/) often uses "challenge tasks" as introductory projects to vet potential employees and interns. These projects give interested individuals a chance to prove themselves, learn a bit about our company & products, and produce useful results in the process. Many of our current employees went through the challenge program. In fact, the challenge program was so successful that some departments made solving a challenge a hard requirement for joining their team. Below is a story of Sofia, who is in charge of reviewing all Investigation Team challenges:
 
-[NTerminal](https://www.nterminal.com) is a data aggregation and analytics platform used for navigating the crypto-financial ecosystem. NTerminal's many data streams can be categorized into three general segments:
-1. **Financial data** - Trade and order book data from exchanges and aggregation entities (price, size, trade-pair, volumes, etc.)
-2. **Natural Language data** - Text-based data streams with keyword & sentiment analysis (social media posts, news articles, regulatory meeting minutes, etc.)
-3. **Technical data** from Blockchains, mining pools, code fuzzing, GitHub repositories, etc.
+[![Investigations Team Video](https://img.youtube.com/vi/fdS-w3k3sGg/0.jpg)](https://www.youtube.com/watch?v=fdS-w3k3sGg)
+
+Our challenges are extremely independent and will require you to manage your own time and work process. Some tasks in our Challenge Program are paid, and we are constantly adding new ones. If you want more work in a specific area, email challenge@inca.digital, and we'll do our best to create more tasks.
 
 ## General rules
 * Anyone can participate in a challenge. You do not need our approval to start working or to submit your results.
@@ -23,7 +22,7 @@
 
 ## Pay-out
 
-When you successfully complete a bounty task, you'll be contacted by our team and given the choice of how you want to get paid:
+When you successfully complete a paid challenge (bounty) task, you'll be contacted by our team and given the choice of how you want to get paid:
 
 ### Cryptocurrency
 
@@ -42,11 +41,19 @@ Let us know if you prefer another way of getting paid, and we'll do our best to 
 * It's important to note that many potential hires will compete for the same challenges, and completing one does not guarantee a bounty payment or a full-time position.
 * To submit your work, email challenge@inca.digital or leave a comment in the issue, and we'll get in touch with you regarding the payment or to help you make necessary changes to your submission.
 
-Don't hesitate to ask us questions by commenting in this issue or emailing us at challenge@inca.digital. Looking forward to seeing your work! 
-
 ## Resources
 
-* [List of available tasks](https://github.com/inca-digital/challenge/issues)
-* [Inca Digital website](https://inca.digital)
+### [List of available tasks](https://github.com/inca-digital/challenge/issues)
+
+### [Inca Digital website](https://inca.digital)
+
+### Our company
+Inca Digital is an open-source intelligence company building tools in fintech. We began our journey in 2009, when our founders met working at INTERPOL. They started a friendship that grew into a mutual passion for disruptive technology. Inca now boasts a team of some of the best engineers, analysts, and security experts, all striving to make intelligence accessible.
+
+### Our product
+[NTerminal](https://www.nterminal.com) is a data aggregation and analytics platform used for navigating the crypto-financial ecosystem. NTerminal's many data streams can be categorized into three general segments:
+1. **Financial data** - Trade and order book data from exchanges and aggregation entities (price, size, trade-pair, volumes, etc.)
+2. **Natural Language data** - Text-based data streams with keyword & sentiment analysis (social media posts, news articles, regulatory meeting minutes, etc.)
+3. **Technical data** from Blockchains, mining pools, code fuzzing, GitHub repositories, etc.
 
 Don't hesitate to ask us questions by commenting in issues or emailing us at challenge@inca.digital.
