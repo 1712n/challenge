@@ -47,6 +47,8 @@ Let us know if you prefer another way of getting paid, and we'll do our best to 
 
 ### [Inca Digital website](https://inca.digital)
 
+### [Hygge work culture](https://hygge.work/) 
+
 ### Our company
 Inca Digital is an open-source intelligence company building tools in fintech. We began our journey in 2009, when our founders met working at INTERPOL. They started a friendship that grew into a mutual passion for disruptive technology. Inca now boasts a team of some of the best engineers, analysts, and security experts, all striving to make intelligence accessible.
 
