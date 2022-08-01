@@ -15,7 +15,7 @@ Our challenges are extremely independent and will require you to manage your own
 
 ## Navigating and Working with the Tasks
 
-* In the [issue list](https://github.com/inca-digital/challenge/issues), you'll find a list of tasks that are currently available.
+* In the [issue list](https://github.com/1712n/challenge/issues), you'll find a list of tasks that are currently available.
 * You are free to start working on any open challenge issue whenever you want. You don't need our approval.
 * For highly complex tasks, we are willing to lock individual issues for qualified candidates to make sure no one else is working on it. For that, please comment in the issue and email challenge@inca.digital with your CV/profile. We'll review your request and assign the issue exclusively to you.
 * To be alerted whenever we create new tasks, please click "👁 Watch" in the upper right corner.
@@ -43,6 +43,6 @@ Let us know if you prefer another way of getting paid, and we'll do our best to 
 
 ## Resources
 
-### [List of available tasks](https://github.com/inca-digital/challenge/issues)
+### [List of available tasks](https://github.com/1712n/challenge/issues)
 
 ### [Hygge work culture](https://hygge.work/) 
