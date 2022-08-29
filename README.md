@@ -4,7 +4,7 @@
 
 IT companies often uses "challenge tasks" as introductory projects to vet potential employees and interns. These projects give interested individuals a chance to prove themselves, learn a bit about the company & products, and produce useful results in the process. In fact, the challenge program was so successful for some teams, that they made solving a challenge a part of their hiring pipeline. Below is a story of Sofia, who is in charge of reviewing all Investigation Team challenges:
 
-[![Investigations Team Video](https://img.youtube.com/vi/fdS-w3k3sGg/0.jpg)](https://www.youtube.com/watch?v=fdS-w3k3sGg)
+[![Investigations Team Video](https://blockshopdc.com/static/assets/images/challenge.jpg)](https://link.hygge.work/MayaVick_Challenge)
 
 Our challenges are extremely independent and will require you to manage your own time and work process. Some tasks in our Challenge Program are paid, and we are constantly adding new ones. If you want more work in a specific area, email challenge@blockshop.org, and we'll do our best to create more tasks.
 
