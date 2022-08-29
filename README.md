@@ -2,7 +2,7 @@
 
 ## Background
 
-IT companies often uses "challenge tasks" as introductory projects to vet potential employees and interns. These projects give interested individuals a chance to prove themselves, learn a bit about the company & products, and produce useful results in the process. In fact, the challenge program was so successful for some teams, that they made solving a challenge a part of their hiring pipeline. Below is a story of Sofia, who is in charge of reviewing all Investigation Team challenges:
+IT companies often uses "challenge tasks" as introductory projects to vet potential employees and interns. These projects give interested individuals a chance to prove themselves, learn a bit about the company & products, and produce useful results in the process. In fact, the challenge program was so successful for some teams, that they made solving a challenge a part of their hiring pipeline.
 
 [![Investigations Team Video](https://blockshopdc.com/static/assets/images/challenge.jpg)](https://link.hygge.work/MayaVick_Challenge)
 
