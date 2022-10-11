@@ -1,0 +1,84 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "cryptoscamdb.json",
+    "type": "array",
+    "title": "CryptoScamDB",
+    "url": "https://api.cryptoscamdb.org/v1/addresses",
+    "desription": "Open-source dataset that tracks malicious URLs and their associated addresses that have the intent of deceiving people for financial gains.",
+    "items": {
+        "type": "object",
+        "required": [
+            "address",
+            "reports"
+        ],
+        "properties": {
+            "address": {
+                "type": "string",
+                "examples": [
+                    "0x0EeE28Fc966585B5848F9D65980Cb1621F9b3f8A",
+                    "AdoCwN5zgm8rdPRcgqiiKqxRtCSi6L31Mk",
+                    "AbsW4eYQ4PMgrQipKE8jaHGyHzNtcyKstoWGurmB2a2B"
+                ]
+            },
+            "reports": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "required": [
+                        "timestamp",
+                        "category",
+                        "abuse type",
+                        "subcategory"
+                    ],
+                    "properties": {
+                        "timestamp": {
+                            "type": "integer",
+                            "examples": [
+                                1665477973623,
+                                1665477973620,
+                                1665477973616
+                            ]
+                        },
+                        "id": {
+                            "type": "string",
+                            "examples": [
+                                "e87b30",
+                                "4ffcb9",
+                                "9833a2"
+                            ]
+                        },
+                        "url": {
+                            "type": "string",
+                            "examples": [
+                                "https://2022coinbase.net",
+                                "http://dexcompetition.site",
+                                "http://auctus.network"
+                            ]
+                        },
+                        "category": {
+                            "type": "string",
+                            "examples": [
+                                "Scamming",
+                                "Phishing"
+                            ]
+                        },
+                        "subcategory": {
+                            "type": "string",
+                            "examples": [
+                                "Trust-Trading",
+                                "Auctus"
+                            ]
+                        },
+                        "description": {
+                            "type": "string",
+                            "examples": [
+                                "Trust trading scam site",
+                                "Fake Auctus crowdsale site"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
