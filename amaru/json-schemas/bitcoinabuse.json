@@ -1,0 +1,61 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "bitcoinabuse.json",
+    "type": "array",
+    "title": "Bitcoin Abuse Database",
+    "url": "https://www.bitcoinabuse.com/",
+    "desription": "Public database of bitcoin addresses used by hackers and criminals.",
+    "items": {
+        "type": "object",
+        "required": [
+            "address",
+            "reports"
+        ],
+        "properties": {
+            "address": {
+                "type": "string",
+                "examples": [
+                    "1B4h63LjY8ZZBLuk1r5s6HkeVRV5W6uRE2",
+                    "1A3wZSNFrnXaw6rgftNfPB9npcEFnw19JT"
+                ]
+            },
+            "reports": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "required": [
+                        "timestamp",
+                        "abuse type",
+                        "description"
+                    ],
+                    "properties": {
+                        "timestamp": {
+                            "type": "integer",
+                            "examples": [
+                                1664540360,
+                                1664540361,
+                                1664540362
+                            ]
+                        },
+                        "abuse type": {
+                            "type": "string",
+                            "examples": [
+                                "blackmail scam",
+                                "sextortion",
+                                "ransomware"
+                            ]
+                        },
+                        "description": {
+                            "type": "string",
+                            "examples": [
+                                "email claiming to have webcam footage and previous internet history trying to blackmail the recipient",
+                                "the usual - devices, spying, sell within 48 hours, etc.",
+                                "Good work deserves recommendation... i lost over 2.3 BTC on Instagram bitcoin scam"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
