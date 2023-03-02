@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://dfpi.ca.gov/crypto-scams/#",
+  "type": "array",
+  "default": [],
+  "title": "Schema for California DFPI reports",
+  "items": {
+    "type": "object",
+    "title": "Scam schema",
+    "required": [
+      "primary subject",
+      "complaint narrative",
+      "scam type",
+      "other subjects",
+      "website"
+    ],
+    "properties": {
+      "primary subject": {
+        "type": "string",
+        "title": "The primary subject Schema",
+        "examples": [
+          "Coinworldage.com/Coinworldlin.com/(Entity Impersonating Coin World)",
+          "247 Crypto Base"
+        ]
+      },
+      "complaint narrative": {
+        "type": "string",
+        "title": "The complaint narrative Schema",
+        "examples": [
+          "The victim opened an account on this website after being referred by a friend “Lisa.” She was subsequently contacted by “Roman” who, communicating through Line Chat, told the victim he was an expert in economics, and could teach her step by step how to make money. During the next few weeks Roman convinced her to put in as much money as she could, including borrowing money from friends or taking out a loan if necessary. Eventually, the victim invested her life savings of more than $500,000 - including her IRA and retirement- through the website. At one point, her account showed a balance of more than $1.2 million. But then the victim was unable to log in to her account. She received a message from customer service saying her account was frozen, and she needed to deposit 30% of her account balance (more than $380,000) into her account within 30 days or she would never be able to get her money back. The victim was then notified that her identify had been stolen, and her phone number and gmail account had been transferred to another individual. She heard from her bank that a person was trying to wire money out of her bank account into a cryptocurrency exchange. Eventually, the victim was able to recover her phone number and gmail account and log back into her account, but she was told her money was still frozen and she only had 20 days to deposit the $300,000 or she would lose her money. The company operated the websites at coinworldage.com and coinworldlin.com.",
+          "The victim complained that they invested Bitcoin in this company that operates the website https://247cryptobase.com and lists a phony California address. Now the victim believes the company is a scam and wants a refund."
+        ]
+      },
+      "scam type": {
+        "type": "string",
+        "title": "The scam type Schema",
+        "examples": [
+          "Pig Butchering Scam/Fraudulent Trading Platform/Imposter Scam",
+          "Pig Butchering Scam/Liquidity Mining Scam/Imposter Scam"
+        ]
+      },
+      "other subjects": {
+        "type": "string",
+        "title": "The other subjects Schema",
+        "examples": [
+          "Lisa Wang Roman ( 鈡云飛)",
+          ""
+        ]
+      },
+      "website": {
+        "type": "string",
+        "title": "The website Schema",
+        "examples": [
+          "Coinworldage.com/Coinworldlin.com",
+          "https://247cryptobase.com"
+        ]
+      }
+    },
+    "examples": [
+      {
+        "primary subject": "Coinworldage.com/Coinworldlin.com/(Entity Impersonating Coin World)",
+        "complaint narrative": "The victim opened an account on this website after being referred by a friend “Lisa.” She was subsequently contacted by “Roman” who, communicating through Line Chat, told the victim he was an expert in economics, and could teach her step by step how to make money. During the next few weeks Roman convinced her to put in as much money as she could, including borrowing money from friends or taking out a loan if necessary. Eventually, the victim invested her life savings of more than $500,000 - including her IRA and retirement- through the website. At one point, her account showed a balance of more than $1.2 million. But then the victim was unable to log in to her account. She received a message from customer service saying her account was frozen, and she needed to deposit 30% of her account balance (more than $380,000) into her account within 30 days or she would never be able to get her money back. The victim was then notified that her identify had been stolen, and her phone number and gmail account had been transferred to another individual. She heard from her bank that a person was trying to wire money out of her bank account into a cryptocurrency exchange. Eventually, the victim was able to recover her phone number and gmail account and log back into her account, but she was told her money was still frozen and she only had 20 days to deposit the $300,000 or she would lose her money. The company operated the websites at coinworldage.com and coinworldlin.com.",
+        "scam type": "Pig Butchering Scam/Fraudulent Trading Platform/Imposter Scam",
+        "other subjects": "Lisa Wang Roman ( 鈡云飛)",
+        "website": "Coinworldage.com/Coinworldlin.com"
+      },
+      {
+        "primary subject": "247 Crypto Base",
+        "complaint narrative": "The victim complained that they invested Bitcoin in this company that operates the website https://247cryptobase.com and lists a phony California address. Now the victim believes the company is a scam and wants a refund.",
+        "scam type": "Pig Butchering Scam/Liquidity Mining Scam/Imposter Scam",
+        "other subjects": "",
+        "website": "https://247cryptobase.com"
+      }
+    ]
+  },
+  "examples": [
+    [
+      {
+        "primary subject": "Coinworldage.com/Coinworldlin.com/(Entity Impersonating Coin World)",
+        "complaint narrative": "The victim opened an account on this website after being referred by a friend “Lisa.” She was subsequently contacted by “Roman” who, communicating through Line Chat, told the victim he was an expert in economics, and could teach her step by step how to make money. During the next few weeks Roman convinced her to put in as much money as she could, including borrowing money from friends or taking out a loan if necessary. Eventually, the victim invested her life savings of more than $500,000 - including her IRA and retirement- through the website. At one point, her account showed a balance of more than $1.2 million. But then the victim was unable to log in to her account. She received a message from customer service saying her account was frozen, and she needed to deposit 30% of her account balance (more than $380,000) into her account within 30 days or she would never be able to get her money back. The victim was then notified that her identify had been stolen, and her phone number and gmail account had been transferred to another individual. She heard from her bank that a person was trying to wire money out of her bank account into a cryptocurrency exchange. Eventually, the victim was able to recover her phone number and gmail account and log back into her account, but she was told her money was still frozen and she only had 20 days to deposit the $300,000 or she would lose her money. The company operated the websites at coinworldage.com and coinworldlin.com.",
+        "scam type": "Pig Butchering Scam/Fraudulent Trading Platform/Imposter Scam",
+        "other subjects": "Lisa Wang Roman ( 鈡云飛)",
+        "website": "Coinworldage.com/Coinworldlin.com"
+      },
+      {
+        "primary subject": "247 Crypto Base",
+        "complaint narrative": "The victim complained that they invested Bitcoin in this company that operates the website https://247cryptobase.com and lists a phony California address. Now the victim believes the company is a scam and wants a refund.",
+        "scam type": "Pig Butchering Scam/Liquidity Mining Scam/Imposter Scam",
+        "other subjects": "",
+        "website": "https://247cryptobase.com"
+      }
+    ]
+  ]
+}

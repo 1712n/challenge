@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://www.comparitech.com/blog/information-security/global-ransomware-attacks/",
+  "type": "array",
+  "default": [],
+  "title": "Schema for comparitech crawling",
+  "items": {
+    "type": "object",
+    "title": "Hack schema",
+    "required": [
+      "year",
+      "date",
+      "company name",
+      "industry",
+      "sub-industry",
+      "city",
+      "country",
+      "records_affected",
+      "ransom_paid",
+      "ransom_amount",
+      "ransomware_strain "
+    ],
+    "properties": {
+      "year": {
+        "type": "string",
+        "title": "The year Schema",
+        "examples": [
+          "2020",
+          "2021"
+        ]
+      },
+      "date": {
+        "type": "string",
+        "title": "The date Schema",
+        "examples": [
+          "Jul, 2020",
+          "Jul, 2021"
+        ]
+      },
+      "company name": {
+        "type": "string",
+        "title": "The company name Schema",
+        "examples": [
+          "Garmin",
+          "Royatonic Spa"
+        ]
+      },
+      "industry": {
+        "type": "string",
+        "title": "The industry Schema",
+        "examples": [
+          "Business"
+        ]
+      },
+      "sub-industry": {
+        "type": "string",
+        "title": "The sub-industry Schema",
+        "examples": [
+          "Technology",
+          "Other"
+        ]
+      },
+      "city": {
+        "type": "string",
+        "title": "The city Schema",
+        "examples": [
+          "Kansas",
+          "Royat"
+        ]
+      },
+      "country": {
+        "type": "string",
+        "title": "The country Schema",
+        "examples": [
+          "United States",
+          "France"
+        ]
+      },
+      "records_affected": {
+        "type": "string",
+        "title": "The records_affected Schema",
+        "examples": [
+          "Unknown"
+        ]
+      },
+      "ransom_paid": {
+        "type": "string",
+        "title": "The ransom_paid Schema",
+        "examples": [
+          "Yes",
+          "Unknown"
+        ]
+      },
+      "ransom_amount": {
+        "type": "string",
+        "title": "The ransom_amount Schema",
+        "examples": [
+          "10,000,000",
+          "less than one bitcoin"
+        ]
+      },
+      "ransomware_strain ": {
+        "type": "string",
+        "title": "The ransomware_strain  Schema",
+        "examples": [
+          "WastedLocker",
+          "Unknown"
+        ]
+      }
+    },
+    "examples": [
+      {
+        "year": "2020",
+        "date": "Jul, 2020",
+        "company name": "Garmin",
+        "industry": "Business",
+        "sub-industry": "Technology",
+        "city": "Kansas",
+        "country": "United States",
+        "records_affected": "Unknown",
+        "ransom_paid": "Yes",
+        "ransom_amount": "10,000,000",
+        "ransomware_strain ": "WastedLocker"
+      },
+      {
+        "year": "2021",
+        "date": "Jul, 2021",
+        "company name": "Royatonic Spa",
+        "industry": "Business",
+        "sub-industry": "Other",
+        "city": "Royat",
+        "country": "France",
+        "records_affected": "Unknown",
+        "ransom_paid": "Unknown",
+        "ransom_amount": "less than one bitcoin",
+        "ransomware_strain ": "Unknown"
+      }
+    ]
+  },
+  "examples": [
+    [
+      {
+        "year": "2020",
+        "date": "Jul, 2020",
+        "company name": "Garmin",
+        "industry": "Business",
+        "sub-industry": "Technology",
+        "city": "Kansas",
+        "country": "United States",
+        "records_affected": "Unknown",
+        "ransom_paid": "Yes",
+        "ransom_amount": "10,000,000",
+        "ransomware_strain ": "WastedLocker"
+      },
+      {
+        "year": "2021",
+        "date": "Jul, 2021",
+        "company name": "Royatonic Spa",
+        "industry": "Business",
+        "sub-industry": "Other",
+        "city": "Royat",
+        "country": "France",
+        "records_affected": "Unknown",
+        "ransom_paid": "Unknown",
+        "ransom_amount": "less than one bitcoin",
+        "ransomware_strain ": "Unknown"
+      }
+    ]
+  ]
+}

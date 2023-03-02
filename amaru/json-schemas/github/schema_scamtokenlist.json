@@ -1,0 +1,257 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://github.com/Rachel-Eichenberger/scamTokenList",
+  "type": "object",
+  "default": {},
+  "title": "Schema for ScamTokenlist",
+  "required": [
+    "name",
+    "logoURI",
+    "keywords",
+    "tags",
+    "timestamp",
+    "tokens"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": "",
+      "title": "The name Schema"
+    },
+    "logoURI": {
+      "type": "string",
+      "default": "",
+      "title": "The logoURI Schema"
+    },
+    "keywords": {
+      "type": "array",
+      "default": [],
+      "title": "The keywords Schema",
+      "items": {
+        "type": "string",
+        "default": "",
+        "title": "A Schema"
+      }
+    },
+    "tags": {
+      "type": "object",
+      "default": {},
+      "title": "The tags Schema",
+      "required": [
+        "scam"
+      ],
+      "properties": {
+        "scam": {
+          "type": "object",
+          "default": {},
+          "title": "The scam Schema",
+          "required": [
+            "name",
+            "description"
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "default": "",
+              "title": "The name Schema",
+              "examples": [
+                "Scam Tokens"
+              ]
+            },
+            "description": {
+              "type": "string",
+              "default": "",
+              "title": "The description Schema",
+              "examples": [
+                "Tokens that are found to not be sellable on uniswap"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "timestamp": {
+      "type": "string",
+      "default": "",
+      "title": "The timestamp Schema"
+    },
+    "tokens": {
+      "type": "array",
+      "default": [],
+      "title": "The tokens Schema",
+      "items": {
+        "type": "object",
+        "title": "A Schema",
+        "required": [
+          "chainId",
+          "address",
+          "symbol",
+          "name",
+          "decimals",
+          "logoURI",
+          "tags"
+        ],
+        "properties": {
+          "chainId": {
+            "type": "integer",
+            "title": "The chainId Schema",
+            "examples": [
+              1
+            ]
+          },
+          "address": {
+            "type": "string",
+            "title": "The address Schema",
+            "examples": [
+              "0x1ee914BB443Ca5607C083335c9D39fDC2c508B7d",
+              "0xde908AD638eC3E02b1B6E4e0474d884F31488612",
+              "0x618dB30E1b1Fc11E0d8fD5E6f558172a4b0687FC"
+            ]
+          },
+          "symbol": {
+            "type": "string",
+            "title": "The symbol Schema",
+            "examples": [
+              "STEEZ",
+              "MTT",
+              "GLASS"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "title": "The name Schema",
+            "examples": [
+              "STEEZ",
+              "MoonToolsToken",
+              "GlassNodes"
+            ]
+          },
+          "decimals": {
+            "type": "integer",
+            "title": "The decimals Schema",
+            "examples": [
+              18,
+              9
+            ]
+          },
+          "logoURI": {
+            "type": "string",
+            "title": "The logoURI Schema",
+            "examples": [
+              "https://cryptorachel.com/apple-touch-icon.png"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "title": "The tags Schema",
+            "items": {
+              "type": "string",
+              "title": "A Schema",
+              "examples": [
+                "HighTax",
+                "NoSelling"
+              ]
+            },
+            "examples": [
+              [
+                "HighTax"
+              ],
+              [
+                "NoSelling"
+              ],
+              [
+                "NoSelling"
+              ]
+            ]
+          }
+        },
+        "examples": [
+          {
+            "chainId": 1,
+            "address": "0x1ee914BB443Ca5607C083335c9D39fDC2c508B7d",
+            "symbol": "STEEZ",
+            "name": "STEEZ",
+            "decimals": 18,
+            "logoURI": "https://cryptorachel.com/apple-touch-icon.png",
+            "tags": [
+              "HighTax"
+            ]
+          },
+          {
+            "chainId": 1,
+            "address": "0xde908AD638eC3E02b1B6E4e0474d884F31488612",
+            "symbol": "MTT",
+            "name": "MoonToolsToken",
+            "decimals": 9,
+            "logoURI": "https://cryptorachel.com/apple-touch-icon.png",
+            "tags": [
+              "NoSelling"
+            ]
+          },
+          {
+            "chainId": 1,
+            "address": "0x618dB30E1b1Fc11E0d8fD5E6f558172a4b0687FC",
+            "symbol": "GLASS",
+            "name": "GlassNodes",
+            "decimals": 18,
+            "logoURI": "https://cryptorachel.com/apple-touch-icon.png",
+            "tags": [
+              "NoSelling"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "examples": [
+    {
+      "name": "Scam Token List",
+      "logoURI": "https://cryptorachel.com/apple-touch-icon.png",
+      "keywords": [
+        "scam tokens"
+      ],
+      "tags": {
+        "scam": {
+          "name": "Scam Tokens",
+          "description": "Tokens that are found to not be sellable on uniswap"
+        }
+      },
+      "timestamp": "2021-08-15T00:00:00+00:00",
+      "tokens": [
+        {
+          "chainId": 1,
+          "address": "0x1ee914BB443Ca5607C083335c9D39fDC2c508B7d",
+          "symbol": "STEEZ",
+          "name": "STEEZ",
+          "decimals": 18,
+          "logoURI": "https://cryptorachel.com/apple-touch-icon.png",
+          "tags": [
+            "HighTax"
+          ]
+        },
+        {
+          "chainId": 1,
+          "address": "0xde908AD638eC3E02b1B6E4e0474d884F31488612",
+          "symbol": "MTT",
+          "name": "MoonToolsToken",
+          "decimals": 9,
+          "logoURI": "https://cryptorachel.com/apple-touch-icon.png",
+          "tags": [
+            "NoSelling"
+          ]
+        },
+        {
+          "chainId": 1,
+          "address": "0x618dB30E1b1Fc11E0d8fD5E6f558172a4b0687FC",
+          "symbol": "GLASS",
+          "name": "GlassNodes",
+          "decimals": 18,
+          "logoURI": "https://cryptorachel.com/apple-touch-icon.png",
+          "tags": [
+            "NoSelling"
+          ]
+        }
+      ]
+    }
+  ]
+}

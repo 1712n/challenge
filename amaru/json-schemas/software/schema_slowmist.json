@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://hacked.slowmist.io/",
+  "type": "array",
+  "default": [],
+  "title": "Schema for slowmist",
+  "items": {
+    "type": "object",
+    "title": "Hack schema",
+    "required": [
+      "target",
+      "method",
+      "loss",
+      "description",
+      "source_link"
+    ],
+    "properties": {
+      "target": {
+        "type": "string",
+        "title": "The target Schema",
+        "examples": [
+          "Revert Finance",
+          "BABYDOLL",
+          "Nostr"
+        ]
+      },
+      "method": {
+        "type": "string",
+        "title": "The method Schema",
+        "examples": [
+          "Contract Vulnerability",
+          "Flash Loan Attack",
+          "Rug Pull"
+        ]
+      },
+      "loss": {
+        "type": "string",
+        "title": "The loss Schema",
+        "examples": [
+          "$ 29,000",
+          "$ 7,900",
+          "232.1 ETH"
+        ]
+      },
+      "description": {
+        "type": "string",
+        "title": "The description Schema",
+        "examples": [
+          "The AMM liquidity management protocol Revert Finance disclosed on Twitter that its v3utils contract was attacked, and 90% of the funds were stolen from a single account. The stolen assets included: 22983.235188 USDC, 4106.316699 USDT, 485.5786287699002 OP, 0.18217977664322793 WETH, 36.59093198260223 DAI, 211.21463945524238 WMATIC and 22 Premia. At current prices, that's about $29,000.",
+          "The Baby Doll (BABYDOLL) project was hit by a flash loan attack, losing 25 BNB (~$7,900). BSC contract address is 0x449cfecbc8e8469eeda869fca6cccd326ece0c04a1cdd96b23d21f3b599adee2",
+          "A fake token project named \"Nostr\" on the Ethereum chain has run away, and its funds have been transferred to a new EOA address 0xeeB8EB5CC144eDddDB204c3ABA499de6b6081696. In the end, the fraudsters made a profit of 232.1 ETH, worth about $370,000. The token contract is 0xA2be922174605BAd450775C76CEb632369480336."
+        ]
+      },
+      "source_link": {
+        "type": "string",
+        "title": "The source_link Schema",
+        "examples": [
+          "https://twitter.com/revertfinance/status/1627490043026890752",
+          "https://www.panewslab.com/zh/sqarticledetails/o9vi6cpj.html",
+          "https://www.panewslab.com/zh/sqarticledetails/4ozpop6z.html"
+        ]
+      }
+    },
+    "examples": [
+      {
+        "target": "Revert Finance",
+        "method": "Contract Vulnerability",
+        "loss": "$ 29,000",
+        "description": "The AMM liquidity management protocol Revert Finance disclosed on Twitter that its v3utils contract was attacked, and 90% of the funds were stolen from a single account. The stolen assets included: 22983.235188 USDC, 4106.316699 USDT, 485.5786287699002 OP, 0.18217977664322793 WETH, 36.59093198260223 DAI, 211.21463945524238 WMATIC and 22 Premia. At current prices, that's about $29,000.",
+        "source_link": "https://twitter.com/revertfinance/status/1627490043026890752"
+      },
+      {
+        "target": "BABYDOLL",
+        "method": "Flash Loan Attack",
+        "loss": "$ 7,900",
+        "description": "The Baby Doll (BABYDOLL) project was hit by a flash loan attack, losing 25 BNB (~$7,900). BSC contract address is 0x449cfecbc8e8469eeda869fca6cccd326ece0c04a1cdd96b23d21f3b599adee2",
+        "source_link": "https://www.panewslab.com/zh/sqarticledetails/o9vi6cpj.html"
+      },
+      {
+        "target": "Nostr",
+        "method": "Rug Pull",
+        "loss": "232.1 ETH",
+        "description": "A fake token project named \"Nostr\" on the Ethereum chain has run away, and its funds have been transferred to a new EOA address 0xeeB8EB5CC144eDddDB204c3ABA499de6b6081696. In the end, the fraudsters made a profit of 232.1 ETH, worth about $370,000. The token contract is 0xA2be922174605BAd450775C76CEb632369480336.",
+        "source_link": "https://www.panewslab.com/zh/sqarticledetails/4ozpop6z.html"
+      }
+    ]
+  },
+  "examples": [
+    [
+      {
+        "target": "Revert Finance",
+        "method": "Contract Vulnerability",
+        "loss": "$ 29,000",
+        "description": "The AMM liquidity management protocol Revert Finance disclosed on Twitter that its v3utils contract was attacked, and 90% of the funds were stolen from a single account. The stolen assets included: 22983.235188 USDC, 4106.316699 USDT, 485.5786287699002 OP, 0.18217977664322793 WETH, 36.59093198260223 DAI, 211.21463945524238 WMATIC and 22 Premia. At current prices, that's about $29,000.",
+        "source_link": "https://twitter.com/revertfinance/status/1627490043026890752"
+      },
+      {
+        "target": "BABYDOLL",
+        "method": "Flash Loan Attack",
+        "loss": "$ 7,900",
+        "description": "The Baby Doll (BABYDOLL) project was hit by a flash loan attack, losing 25 BNB (~$7,900). BSC contract address is 0x449cfecbc8e8469eeda869fca6cccd326ece0c04a1cdd96b23d21f3b599adee2",
+        "source_link": "https://www.panewslab.com/zh/sqarticledetails/o9vi6cpj.html"
+      },
+      {
+        "target": "Nostr",
+        "method": "Rug Pull",
+        "loss": "232.1 ETH",
+        "description": "A fake token project named \"Nostr\" on the Ethereum chain has run away, and its funds have been transferred to a new EOA address 0xeeB8EB5CC144eDddDB204c3ABA499de6b6081696. In the end, the fraudsters made a profit of 232.1 ETH, worth about $370,000. The token contract is 0xA2be922174605BAd450775C76CEb632369480336.",
+        "source_link": "https://www.panewslab.com/zh/sqarticledetails/4ozpop6z.html"
+      }
+    ]
+  ]
+}

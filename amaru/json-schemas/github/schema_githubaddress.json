@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "array",
+  "default": [],
+  "title": "Schema for Github token address (Scamsniffer / can be used in etherscan)",
+  "items": {
+    "type": "string",
+    "title": "Address schema",
+    "examples": [
+      "0x9094df5d580cda43649066791598f15b134fb62f",
+      "0x1fc41eb91573a055f660a55f48f8d1d8ce792e54",
+      "0x82fa497bb1003068e0a10b2b91258ee027ac12ec"
+    ]
+  },
+  "examples": [
+    [
+      "0x9094df5d580cda43649066791598f15b134fb62f",
+      "0x1fc41eb91573a055f660a55f48f8d1d8ce792e54",
+      "0x82fa497bb1003068e0a10b2b91258ee027ac12ec"
+    ]
+  ]
+}

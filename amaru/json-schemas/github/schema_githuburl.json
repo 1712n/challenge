@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "array",
+  "default": [],
+  "title": "Schema for Github URL(Discord-AntiScam, EtherAddressLookup, Scamsniffer)",
+  "items": {
+    "type": "string",
+    "title": "Url schema",
+    "examples": [
+      "02ip.ru",
+      "0x1trade.com",
+      "0xmons.net",
+      "101nitro.com",
+      "1111sale.us"
+    ]
+  },
+  "examples": [
+    [
+      "02ip.ru",
+      "0x1trade.com",
+      "0xmons.net",
+      "101nitro.com",
+      "1111sale.us"
+    ]
+  ]
+}
