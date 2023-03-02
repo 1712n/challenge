@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://defillama.com/hacks",
+  "type": "array",
+  "default": [],
+  "title": "Schema for Defilama hacks",
+  "items": {
+    "type": "object",
+    "title": "Hack schema",
+    "required": [
+      "name",
+      "date",
+      "chains",
+      "classification",
+      "technique",
+      "lin",
+      "amount lost"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "The name Schema",
+        "examples": [
+          "Orion",
+          "Midas Capital",
+          "Harmony Bridge"
+        ]
+      },
+      "date": {
+        "type": "string",
+        "title": "The date Schema",
+        "examples": [
+          "2 Feb, 2023",
+          "17 Jan, 2023",
+          "23 Jun, 2022"
+        ]
+      },
+      "chains": {
+        "type": "string",
+        "title": "The chains Schema",
+        "examples": [
+          "BSC",
+          "Polygon",
+          "Ethereum/BSC"
+        ]
+      },
+      "classification": {
+        "type": "string",
+        "title": "The classification Schema",
+        "examples": [
+          "Protocol Logic",
+          "Ecosystem",
+          "Infrastructure"
+        ]
+      },
+      "technique": {
+        "type": "string",
+        "title": "The technique Schema",
+        "examples": [
+          "Contract Vulnerability",
+          "Flashloan Reentrancy Attack",
+          "Private Key Compromised (Unknown Method)"
+        ]
+      },
+      "lin": {
+        "type": "string",
+        "title": "The lin Schema",
+        "examples": [
+          "https://twitter.com/peckshield/status/1621337925228306433?s=20&t=ZroERzkeCrxy3gHxtboQeA",
+          "https://twitter.com/peckshield/status/1620917292514299904?s=20&t=ZroERzkeCrxy3gHxtboQeA",
+          "https://rekt.news/harmony-rekt/"
+        ]
+      },
+      "amount lost": {
+        "type": "string",
+        "title": "The amount lost Schema",
+        "examples": [
+          "$3m",
+          "$0.66m",
+          "$100m"
+        ]
+      }
+    },
+    "examples": [
+      {
+        "name": "Orion",
+        "date": "2 Feb, 2023",
+        "chains": "BSC",
+        "classification": "Protocol Logic",
+        "technique": "Contract Vulnerability",
+        "lin": "https://twitter.com/peckshield/status/1621337925228306433?s=20&t=ZroERzkeCrxy3gHxtboQeA",
+        "amount lost": "$3m"
+      },
+      {
+        "name": "Midas Capital",
+        "date": "17 Jan, 2023",
+        "chains": "Polygon",
+        "classification": "Ecosystem",
+        "technique": "Flashloan Reentrancy Attack",
+        "lin": "https://twitter.com/peckshield/status/1620917292514299904?s=20&t=ZroERzkeCrxy3gHxtboQeA",
+        "amount lost": "$0.66m"
+      },
+      {
+        "name": "Harmony Bridge",
+        "date": "23 Jun, 2022",
+        "chains": "Ethereum/BSC",
+        "classification": "Infrastructure",
+        "technique": "Private Key Compromised (Unknown Method)",
+        "lin": "https://rekt.news/harmony-rekt/",
+        "amount lost": "$100m"
+      }
+    ]
+  },
+  "examples": [
+    [
+      {
+        "name": "Orion",
+        "date": "2 Feb, 2023",
+        "chains": "BSC",
+        "classification": "Protocol Logic",
+        "technique": "Contract Vulnerability",
+        "lin": "https://twitter.com/peckshield/status/1621337925228306433?s=20&t=ZroERzkeCrxy3gHxtboQeA",
+        "amount lost": "$3m"
+      },
+      {
+        "name": "Midas Capital",
+        "date": "17 Jan, 2023",
+        "chains": "Polygon",
+        "classification": "Ecosystem",
+        "technique": "Flashloan Reentrancy Attack",
+        "lin": "https://twitter.com/peckshield/status/1620917292514299904?s=20&t=ZroERzkeCrxy3gHxtboQeA",
+        "amount lost": "$0.66m"
+      },
+      {
+        "name": "Harmony Bridge",
+        "date": "23 Jun, 2022",
+        "chains": "Ethereum/BSC",
+        "classification": "Infrastructure",
+        "technique": "Private Key Compromised (Unknown Method)",
+        "lin": "https://rekt.news/harmony-rekt/",
+        "amount lost": "$100m"
+      }
+    ]
+  ]
+}

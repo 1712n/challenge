@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://www.coinopsy.com/dead-coins/",
+  "type": "array",
+  "default": [],
+  "title": "Schema for Coinopsy dead coins",
+  "items": {
+    "type": "object",
+    "title": "A Schema",
+    "required": [
+      "name",
+      "summary",
+      "project_start_date",
+      "project_end_date",
+      "founder"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "The name Schema",
+        "examples": [
+          "Braincoin",
+          "Atomic coin",
+          "San Coin"
+        ]
+      },
+      "summary": {
+        "type": "string",
+        "title": "The summary Schema",
+        "examples": [
+          "Abandoned or No Volume",
+          "Scam or Other Issues"
+        ]
+      },
+      "project_start_date": {
+        "type": "string",
+        "title": "The project_start_date Schema",
+        "examples": [
+          "Unknown",
+          "2016",
+          "2017"
+        ]
+      },
+      "project_end_date": {
+        "type": "string",
+        "title": "The project_end_date Schema",
+        "examples": [
+          "2017",
+          "Current",
+          "Swap"
+        ]
+      },
+      "founder": {
+        "type": "string",
+        "title": "The founder Schema",
+        "examples": [
+          "Unknown",
+          "Francis Dierick"
+        ]
+      }
+    }
+  },
+  "examples": [
+    [
+      {
+        "name": "Braincoin",
+        "summary": "Abandoned or No Volume",
+        "project_start_date": "Unknown",
+        "project_end_date": "2017",
+        "founder": "Unknown"
+      },
+      {
+        "name": "Atomic coin",
+        "summary": "Scam or Other Issues",
+        "project_start_date": "2016",
+        "project_end_date": "Current",
+        "founder": "Unknown"
+      },
+      {
+        "name": "San Coin",
+        "summary": "Scam or Other Issues",
+        "project_start_date": "2017",
+        "project_end_date": "Swap",
+        "founder": "Francis Dierick"
+      }
+    ]
+  ]
+}

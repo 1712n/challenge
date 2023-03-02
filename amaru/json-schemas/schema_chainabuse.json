@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://docs.chainabuse.com/reference/reports-1",
+  "type": "array",
+  "title": "Schema for chainabuse",
+  "url": "https://chainabuse.com",
+  "desription": "Let's make web3 safer, together. Report scams across multiple blockchains and opt-in to get support.",
+  "items": {
+    "type": "object",
+    "title": "A Schema",
+    "required": [
+      "id",
+      "trusted",
+      "checked",
+      "scamCategory",
+      "description",
+      "createdAt",
+      "addresses",
+      "netVoteCount",
+      "descriptionMarkdown",
+      "accusedScammers"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "title": "The id Schema",
+        "examples": [
+          "40d0192e-edee-4de4-95c4-307d5008f367",
+          "96792e0d-772c-48af-b86c-3c861107f157",
+          "4830dfa6-9910-4a09-88d4-b1432813a1bf",
+          "e7e62092-0c63-46c5-9c63-6cbea9c7fda4"
+        ]
+      },
+      "trusted": {
+        "type": "boolean",
+        "title": "The trusted Schema",
+        "examples": [
+          true
+        ]
+      },
+      "checked": {
+        "type": "null",
+        "title": "The checked Schema",
+        "examples": [
+          null
+        ]
+      },
+      "scamCategory": {
+        "type": "string",
+        "title": "The scamCategory Schema",
+        "examples": [
+          "PHISHING"
+        ]
+      },
+      "description": {
+        "type": "string",
+        "title": "The description Schema",
+        "examples": [
+          "Phishing Website",
+          "Malicious Website"
+        ]
+      },
+      "createdAt": {
+        "type": "string",
+        "title": "The createdAt Schema",
+        "examples": [
+          "2023-02-27T14:00:06.155Z",
+          "2023-02-27T08:33:28.204Z"
+        ]
+      },
+      "addresses": {
+        "type": "array",
+        "title": "The addresses Schema",
+        "items": {
+          "type": "object",
+          "title": "A Schema",
+          "required": [
+            "address",
+            "chain",
+            "domain"
+          ],
+          "properties": {
+            "address": {
+              "type": [
+                "null",
+                "string"
+              ],
+              "title": "The address Schema",
+              "examples": [
+                null,
+                "0x109ce844cdc34ebe3c9eef4b1b11a150625227b8"
+              ]
+            },
+            "chain": {
+              "type": [
+                "null",
+                "string"
+              ],
+              "title": "The chain Schema",
+              "examples": [
+                null,
+                "ETH"
+              ]
+            },
+            "domain": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "The domain Schema",
+              "examples": [
+                "https://www.recoverycoding.com/",
+                "bakeryswap-pancake.com",
+                "zksynk.tech",
+                null,
+                "openseacrypto.net"
+              ]
+            }
+          }
+        }
+      },
+      "netVoteCount": {
+        "type": "integer",
+        "title": "The netVoteCount Schema",
+        "examples": [
+          1
+        ]
+      },
+      "descriptionMarkdown": {
+        "type": "string",
+        "title": "The descriptionMarkdown Schema",
+        "examples": [
+          "Phishing Website",
+          "Malicious Website"
+        ]
+      },
+      "accusedScammers": {
+        "type": "array",
+        "title": "The accusedScammers Schema",
+        "items": {}
+      }
+    }
+  }
+}

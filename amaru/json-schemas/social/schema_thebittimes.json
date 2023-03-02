@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://thebittimes.com/coins-scam.html",
+  "type": "array",
+  "default": [],
+  "title": "Schema for Thebittimes scams&hacks",
+  "items": {
+    "type": "object",
+    "title": "Scam schema",
+    "required": [
+      "#",
+      "name",
+      "symbol",
+      "deployed"
+    ],
+    "properties": {
+      "#": {
+        "type": "integer",
+        "title": "The № Schema",
+        "examples": [
+          1,
+          2,
+          3
+        ]
+      },
+      "name": {
+        "type": "string",
+        "title": "The name Schema",
+        "examples": [
+          "FOMRO COIN",
+          "ESO AI Protocol",
+          "Hex Trust Token"
+        ]
+      },
+      "symbol": {
+        "type": "string",
+        "title": "The symbol Schema",
+        "examples": [
+          "FOMRO",
+          "ESO",
+          "HXT"
+        ]
+      },
+      "deployed": {
+        "type": "string",
+        "title": "The deployed Schema",
+        "examples": [
+          "9h ago",
+          "5d ago"
+        ]
+      }
+    }
+  },
+  "examples": [
+    [
+      {
+        "#": 1,
+        "name": "FOMRO COIN",
+        "symbol": "FOMRO",
+        "deployed": "9h ago"
+      },
+      {
+        "#": 2,
+        "name": "ESO AI Protocol",
+        "symbol": "ESO",
+        "deployed": "5d ago"
+      },
+      {
+        "#": 3,
+        "name": "Hex Trust Token",
+        "symbol": "HXT",
+        "deployed": "5d ago"
+      }
+    ]
+  ]
+}

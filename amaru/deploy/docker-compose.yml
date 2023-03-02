@@ -1,0 +1,116 @@
+version: '3'
+
+services:
+                                  #### ---- DOMAIN SERVICES ----- ####
+  api:
+    image: api:latest
+    build:
+      context: .
+      dockerfile: ApiDockerfile
+    container_name: ScamsAPI
+    ports:
+      - "8083:8080"
+    depends_on:
+      - graylog
+      - scamsdb
+      - scraper
+    deploy:
+      resources:
+        limits:
+          memory: 400M
+    environment:
+      - JAVA_TOOL_OPTIONS=-XX:MinRAMPercentage=50 -XX:MaxRAMPercentage=80
+      - SPRING_DATA_MONGODB_HOST=scamsdb
+      - SPRING_DATA_MONGODB_PORT=27017
+      - SPRING_DATA_MONGODB_DATABASE=admin
+      - SPRING_DATA_MONGODB_USERNAME=root
+      - SPRING_DATA_MONGODB_PASSWORD=rc7aFsJj64g
+    networks:
+      - intra_net
+
+
+  scraper:
+    build:
+      context: .
+      dockerfile: ScraperDockerfile
+    container_name: Scraper
+    deploy:
+      resources:
+        limits:
+          memory: 200M
+    depends_on:
+      - graylog
+      - scamsdb
+    networks:
+      - intra_net
+                                 #### ---- DATABASES ----- ####
+  scamsdb:
+    image: 'mongo'
+    restart: always
+    container_name: ScamsDB
+    ports:
+      - "27018:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rc7aFsJj64g
+      MONGO_INITDB_DATABASE: admin
+    networks:
+      - intra_net
+
+                                  #### ---- LOGGING ----- ####
+  graylog:
+    image: graylog/graylog:4.3.3
+    container_name: Graylog
+    environment:
+      - GRAYLOG_ROOT_USERNAME=lbom
+       # Graylog pass - M2&vnx%ja7Fx@HqmQM
+      - GRAYLOG_PASSWORD_SECRET=d6kq2QcQNJeaD75JqT
+      - GRAYLOG_ROOT_PASSWORD_SHA2=61aac6f2f8e2dd9512d2db52b4d807b2b72f64d75a841d89a57eacbfc8ba2579
+      - GRAYLOG_HTTP_EXTERNAL_URI=http://127.0.0.1:9013/
+    entrypoint: /usr/bin/tini -- wait-for-it elasticsearch:9200 --  /docker-entrypoint.sh
+    networks:
+      - intra_net
+    restart: always
+    depends_on:
+      - mongo
+      - elasticsearch
+    ports:
+      # Graylog web interface and REST API
+      - "9013:9000"
+      # fo testing on local machine
+      # - "12201:12201/udp"
+      # Syslog TCP
+      #  - 1514:1514
+      # Syslog UDP
+      #  - 1514:1514/udp
+      # GELF TCP
+      #  - 12201:12201
+  mongo:
+    image: mongo:5.0.1
+    container_name: LogDB
+    networks:
+      - intra_net
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.10.2
+    container_name: Elastic
+    environment:
+      - http.host=0.0.0.0
+      - transport.host=localhost
+      - network.host=0.0.0.0
+      - "ES_JAVA_OPTS=-Dlog4j2.formatMsgNoLookups=true -Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    networks:
+      - intra_net
+
+                                  #### ---- END LOGGING ----- ####
+
+networks:
+  intra_net:
+    driver: bridge
