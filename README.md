@@ -19,6 +19,7 @@ Our challenges are extremely independent and will require you to manage your own
 * You are free to start working on any open challenge issue whenever you want.
 * For highly complex tasks, we are willing to lock individual issues for qualified candidates to make sure no one else is working on it. For that, please comment in the issue and email challenge@blockshop.org with your CV/profile. We'll review your request and assign the issue exclusively to you.
 * To be alerted whenever we create new tasks, please click "👁 Watch" in the upper right corner.
+* YOu can see the success stories of Challenge winners [here](https://www.instagram.com/explore/tags/challenge_successstory/)
 
 ## Pay-out
 
@@ -40,3 +41,5 @@ Let us know if you prefer another way of getting paid, and we'll do our best to 
 
 * It's important to note that many potential hires will compete for the same challenges, and completing one does not guarantee a bounty payment or a full-time position.
 * To submit your work, email challenge@blockshop.org or leave a comment in the issue, and we'll get in touch with you regarding the payment or to help you make necessary changes to your submission.
+
+
