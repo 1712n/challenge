@@ -10,7 +10,7 @@ REGEXS = [
         ),
         "type": "Email",
     },
-    {"regex": re.compile("password"), "type": "Password"},
+    {"regex": re.compile(r"password"), "type": "Password"},
     {
         "regex": re.compile(
             r"(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3,}"
