@@ -19,9 +19,7 @@ REGEXS = [
     },
     {"pattern": re.compile(r"username"), "type": "Username"},
     {
-        "pattern": re.compile(
-            r"(?i)api_key(.{0,20})?[\\'|\\\"][0-9a-zA-Z]{32,45}[\\'|\\\"]"
-        ),
+        "pattern": re.compile(r"api_key=?"),
         "type": "Generic API key",
     },
     {
