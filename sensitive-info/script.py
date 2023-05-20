@@ -54,8 +54,9 @@ def check_content(resource: dict, content: str) -> t.Generator[t.Dict, t.Any, t.
     """Generator function that compares content(string) with all available
     regex patterns.
     """
+    SPLIT_DELIMITERS: str = r"\n|,|!|;"
     for regex in REGEXS:
-        for line in re.split(r"\n|,|!|;", content):
+        for line in re.split(SPLIT_DELIMITERS, content):
             if value := regex.get("pattern").search(line):
                 yield {
                     "value": value.group(),
