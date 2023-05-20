@@ -2,7 +2,7 @@ import os
 import httpx
 import dotenv
 import typing as t
-from pprint import pprint as print
+from rich import print
 
 from regexs import REGEXS
 
@@ -27,7 +27,9 @@ class Github:
         self.repository = repository
         self.repository_url = f"repos/{self.owner}/{self.repository}"
 
-    def send_request(self, method: str, path: str, body: t.Optional[dict] = {}) -> dict:
+    def send_request(
+        self, method: str, path: str, body: t.Optional[dict] = {}
+    ) -> t.Union[t.Dict, t.List]:
         return httpx.request(
             method, f"{GITHUB_API_URL}/{path}", json=body, headers=HEADERS
         ).json()
@@ -48,25 +50,29 @@ class Github:
             "GET", f"{self.repository_url}/issues/{number}/comments"
         )
 
+    # Pull request actions
 
-def check_content(issue: dict, content: str) -> t.List[t.Dict]:
-    """Function that compares content(string) with all available
+
+def check_content(resource: dict, content: str) -> t.Generator[t.Dict, t.Any, t.Any]:
+    """Generator function that compares content(string) with all available
     regex patterns. Returns resulkt
     """
     results: t.List[t.Dict] = list()
 
     for regex in REGEXS:
-        if value := regex["regex"].search(content):
-            results.append(
-                {
+        for line in content.split("\n"):
+            if value := regex["regex"].search(line):
+                yield {
                     "value": value.group(),
                     "type": regex["type"],
-                    "url": issue.get("html_url"),
+                    "url": resource.get("html_url"),
+                    "line": line.__str__(),
                 }
-            )
 
-    return results
+
+def create_report(results: t.List[t.Dict]) -> str:
+    ...
 
 
 if __name__ == "__main__":
-    gh = Github("abduazizziyodov", "test-repo")
+    github = Github("abduazizziyodov", "test-repo")
