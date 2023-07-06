@@ -19,7 +19,7 @@ Our challenges are extremely independent and will require you to manage your own
 * You are free to start working on any open challenge issue whenever you want.
 * For highly complex tasks, we are willing to lock individual issues for qualified candidates to make sure no one else is working on it. For that, please comment in the issue and email challenge@blockshop.org with your CV/profile. We'll review your request and assign the issue exclusively to you.
 * To be alerted whenever we create new tasks, please click "👁 Watch" in the upper right corner.
-* YOu can see the success stories of Challenge winners [here](https://www.instagram.com/explore/tags/challenge_successstory/)
+* You can see the success stories of Challenge winners [here](https://www.instagram.com/explore/tags/challenge_successstory/)
 
 ## Pay-out
 
