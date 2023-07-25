@@ -226,7 +226,7 @@
   "required": [
     "props"
   ],
-  "title": "web3isgoinggreat",
+  "title": "Web3isgoinggreat database",
   "type": "object",
   "url": "https://web3isgoinggreat.com",
   "$id": "web3isgoinggreat.json",
