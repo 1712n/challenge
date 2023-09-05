@@ -1,0 +1,234 @@
+{
+  "$defs": {
+    "Entry": {
+      "properties": {
+        "id": {
+          "examples": [
+            "2023-07-22-0"
+          ],
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "examples": [
+            "Alphapo hacked for more than $31&nbsp;million"
+          ],
+          "title": "Title",
+          "type": "string"
+        },
+        "body": {
+          "description": "information about hack",
+          "title": "Body",
+          "type": "string"
+        },
+        "date": {
+          "description": "publication date in mass media",
+          "title": "Date",
+          "type": "string"
+        },
+        "scamAmountDetails": {
+          "$ref": "#/$defs/ScamAmountDetails"
+        },
+        "links": {
+          "items": {
+            "$ref": "#/$defs/Links"
+          },
+          "title": "Links",
+          "type": "array"
+        },
+        "filtes": {
+          "$ref": "#/$defs/Filters"
+        },
+        "shortTitle": {
+          "title": "Shorttitle",
+          "type": "string"
+        },
+        "socialPostIds": {
+          "$ref": "#/$defs/SocialPostIds"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "body",
+        "date",
+        "scamAmountDetails",
+        "links",
+        "filtes",
+        "shortTitle",
+        "socialPostIds"
+      ],
+      "title": "Entry",
+      "type": "object"
+    },
+    "Filters": {
+      "properties": {
+        "tech": {
+          "examples": [
+            "defi"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Tech",
+          "type": "array"
+        },
+        "blockchain": {
+          "examples": [
+            "etherium"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Blockchain",
+          "type": "array"
+        },
+        "theme": {
+          "examples": [
+            "hack"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "title": "Theme",
+          "type": "array"
+        }
+      },
+      "required": [
+        "tech",
+        "blockchain",
+        "theme"
+      ],
+      "title": "Filters",
+      "type": "object"
+    },
+    "Links": {
+      "properties": {
+        "linkText": {
+          "examples": [
+            "\"Alphapo hot wallets hacked for over $31 million\""
+          ],
+          "title": "Linktext",
+          "type": "string"
+        },
+        "href": {
+          "examples": [
+            "https://cointelegraph.com/news/alphapo-hot-wallets-hacked-for-over-31-million"
+          ],
+          "title": "Href",
+          "type": "string"
+        }
+      },
+      "required": [
+        "linkText",
+        "href"
+      ],
+      "title": "Links",
+      "type": "object"
+    },
+    "PageProps": {
+      "properties": {
+        "entries": {
+          "items": {
+            "$ref": "#/$defs/Entry"
+          },
+          "title": "Entries",
+          "type": "array"
+        }
+      },
+      "required": [
+        "entries"
+      ],
+      "title": "PageProps",
+      "type": "object"
+    },
+    "Props": {
+      "properties": {
+        "pageProps": {
+          "$ref": "#/$defs/PageProps"
+        }
+      },
+      "required": [
+        "pageProps"
+      ],
+      "title": "Props",
+      "type": "object"
+    },
+    "ScamAmountDetails": {
+      "properties": {
+        "hasScamAmount": {
+          "title": "Hasscamamount",
+          "type": "boolean"
+        },
+        "total": {
+          "title": "Total",
+          "type": "integer"
+        },
+        "preRecoveryAmount": {
+          "title": "Prerecoveryamount",
+          "type": "integer"
+        },
+        "links": {
+          "items": {
+            "$ref": "#/$defs/Links"
+          },
+          "title": "Links",
+          "type": "array"
+        }
+      },
+      "required": [
+        "hasScamAmount",
+        "total",
+        "preRecoveryAmount",
+        "links"
+      ],
+      "title": "ScamAmountDetails",
+      "type": "object"
+    },
+    "SocialPostIds": {
+      "properties": {
+        "twitter": {
+          "examples": [
+            "1683572886643044353"
+          ],
+          "title": "Twitter",
+          "type": "string"
+        },
+        "mastodon": {
+          "examples": [
+            "110770915512589216"
+          ],
+          "title": "Mastodon",
+          "type": "string"
+        },
+        "bluesky": {
+          "examples": [
+            "3k3c7ghsui22k"
+          ],
+          "title": "Bluesky",
+          "type": "string"
+        }
+      },
+      "required": [
+        "twitter",
+        "mastodon",
+        "bluesky"
+      ],
+      "title": "SocialPostIds",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "props": {
+      "$ref": "#/$defs/Props"
+    }
+  },
+  "required": [
+    "props"
+  ],
+  "title": "Web3isgoinggreat database",
+  "type": "object",
+  "url": "https://web3isgoinggreat.com",
+  "$id": "web3isgoinggreat.json",
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
